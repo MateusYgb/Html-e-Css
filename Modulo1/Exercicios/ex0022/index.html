@@ -3,48 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantico</title>
+    <title>O fundo não precisa ter só cor</title>
     <style>
-        body{
-            font: 1em Arial, Helvetica, sans-serif;
-            background-color: peachpuff;
+        div.quadrado{
+            display: inline-block;
+            margin: 5px;
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            border: solid black 2px;
+            border-radius: 20px;
+        }
+        div#q1{
+            background-color: skyblue;
+        }
+        
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, orange);
         }
 
-        article#caixa{
-            background-color: snow;
-            width: 400px;
-            margin: auto;
-            padding: 1px 10px;
-            box-shadow: 3px 5px 4px black;
+        div#q3{
+            background-image: url(fototeste.png);
         }
+        
     </style>
 </head>
 <body>
-    <header>
-        <h1>Meu site</h1>
-        <nav>link link link</nav>
-    </header>
-
-    <main>
-        <section>
-            <article id = "caixa">
-                <h2>Título</h2>
-                <p>Texto do artigo</p>
-            </article>
-            <article>
-                <h2>Título</h2>
-                <p>texto do artigo</p>
-            </article>
-            <aside>
-                conteúdo periférico
-            </aside>
-        </section>
-        <aside>
-            conteúdo periférico
-        </aside>
-    </main>
-    <footer>
-        conteúdo rodapé
-    </footer>
+    <div class = "quadrado" id="q1"></div>
+    <div class = "quadrado" id="q2"></div>
+    <div class = "quadrado" id="q3"></div>
 </body>
 </html>
